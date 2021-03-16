@@ -120,15 +120,15 @@ header .intro{
     margin-left: 1200px;
     margin-top: -204px;
 }
-/* Media qurey section */
+/* Media query section */
 
-@media screen and (min-width: 768px) and (max-width: 1024px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
     .container {
         margin: 0;
     }
 }
 
-@media screen and (max-width:768px) {
+@media screen and (max-width:1199px) {
     .navTrigger {
         display: block;
     }
