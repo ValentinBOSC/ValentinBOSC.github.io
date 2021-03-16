@@ -129,11 +129,17 @@ header .intro{
 }
 
 @media screen and (max-width:1199px) {
+    .nav{
+        height: 5%;
+    }
     .navTrigger {
         display: block;
     }
     .nav div.logo {
         margin-left: 15px;
+    }
+    .nav div.logo a{
+        font-size: 4rem;
     }
     .nav div.main_list {
         width: 100%;
@@ -162,10 +168,14 @@ header .intro{
     .nav div.main_list ul li a {
         text-align: center;
         width: 100%;
-        font-size: 3rem;
+        font-size: 5rem;
         padding: 20px;
     }
     .nav div.media_button {
+        display: block;
+        height: 200%;
+    }
+    .navTrigger i {
         display: block;
     }
 }
