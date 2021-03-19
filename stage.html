@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="fr" >
+<head>
+  <meta charset="UTF-8">
+  <title>BOSC Valentin</title>
+  <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+    <nav class="nav">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">BOSC Valentin</a>
+            </div>
+            <div id="mainListDiv" class="main_list">
+                <ul class="navlinks">
+                    <li><a href="index.html#Competences">Compétences</a></li>
+                    <li><a href="index.html#Projet">Projet</a></li>
+                    <li><a href="index.html#Veille">Veille</a></li>
+                    <li><a href="index.html#Information">Information</a></li>
+                </ul>
+            </div>
+            <span class="navTrigger">
+                <i></i>
+                <i></i>
+                <i></i>
+            </span>
+        </div>
+    </nav>
+
+    <header class="stage">
+        <div class="container">
+            <div class="intro">
+                <p>Stage de 2<sup>ème</sup> années chez IEVA</p>
+            </div>
+        </div>
+    </header>
+
+    <section class="prensantation">
+        <h2 class="myH2">Présentation de l'entreprise</h2>
+        <p class="myP">
+        IEVA est une entreprise de cosmétique et de bien. 
+        L’entreprise IEVA fait partie de IEVA Group qui comprend les sociétés IEVA et Ateliers du Sourcils.
+        Le président de la société IEVA GROUP est Jean KARAM.
+        Elle possède un effectif de 13 personnes situer entre Saint-Priest, Brest et Grenoble.
+        </p>
+        <div class="myImg">
+            <img src="css/img/map.PNG" alt="Workplace" usemap="#workmap" width="500" height="500">
+
+            <map name="workmap">
+                <area shape="circle" coords="280,140,5" alt="ui" href="css/img/tenor.gif">
+            </map>
+        </div>
+    </section>
+
+    
+
+    
+<!-- Jquery needed -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <!--<script src="js/scripts.js"></script>-->
+
+<!-- Function used to shrink nav bar removing paddings and adding black background -->
+    <script>
+        $(window).scroll(function() {
+            if ($(document).scrollTop() > 50) {
+                $('.nav').addClass('affix');
+                console.log("OK");
+            } else {
+                $('.nav').removeClass('affix');
+            }
+        });
+    </script>
+<!-- partial -->
+  <script  src="js/script.js"></script>
+
+</body>
+</html>
