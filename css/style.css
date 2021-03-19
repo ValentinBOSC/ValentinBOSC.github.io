@@ -137,6 +137,10 @@ header .intro{
     .container {
         margin: 0;
     }
+
+    .stage{
+        background-position: none;
+    }
 }
 
 @media screen and (max-width:1199px) {
