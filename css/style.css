@@ -94,13 +94,13 @@ header {
     color: #fff;
 }
 .ind{
-    background-image: url(img/work.jpg);
+    background-image: url(/img/work.jpg);
     background-repeat: none;
     background-size: cover;
 }
 
 .stage{
-    background-image: url(img/markus-gjengaar-qWl31aLdHf8-unsplash.jpg);
+    background-image: url(/img/markus-gjengaar-qWl31aLdHf8-unsplash.jpg);
     background-repeat: none;
     background-size: cover;
     background-position: bottom;
