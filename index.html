@@ -78,86 +78,36 @@
         </div>
     </section>
 
-    <section id="Projet">
-      <div class="cards">
-          <div class="card">
-            <div class="card__image-holder">
-              <img class="card__image" src="/img/Karl.png" alt="Karl" />
-            </div>
-            <div class="card-title">
-              <a href="#" class="toggle-info btn">
-                <span class="left"></span>
-                <span class="right"></span>
-              </a>
-              <h2>
-                  Karl le carreleur
-                  <small>Application web</small>
-              </h2>
-            </div>
-            <div class="card-flap flap1">
-              <div class="card-description">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              </div>
-              <div class="card-flap flap2">
-                <div class="card-actions">
-                  <button onclick="document.location='#'" class="btn">Lire la suite</button> 
-                </div>
-              </div>
-            </div>
-          </div>
-        
-          <div class="card">
-            <div class="card__image-holder">
-              <img class="card__image" src="/img/logo1.jpg" alt="IEVA logo" />
-            </div>
-            <div class="card-title">
-              <a href="#" class="toggle-info btn">
-                <span class="left"></span>
-                <span class="right"></span>
-              </a>
-              <h2>
-                  IEVA
-                  <small>Stage de 2<sup>ème</sup> années</small>
-              </h2>
-            </div>
-            <div class="card-flap flap1">
-              <div class="card-description">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              </div>
-              <div class="card-flap flap2">
-                <div class="card-actions">
-                  <button onclick="document.location='https://valentinbosc.github.io/stage'" class="btn">Lire la suite</button> 
-                </div>
-              </div>
-            </div>
-          </div>
-        
-          <div class="card">
-            <div class="card__image-holder">
-              <img class="card__image" src="/img/gedi.png" alt="Gedimagination" />
-            </div>
-            <div class="card-title">
-              <a href="#" class="toggle-info btn">
-                <span class="left"></span>
-                <span class="right"></span>
-              </a>
-              <h2>
-                  Gedimagination
-                  <small>Application web et mobile</small>
-              </h2>
-            </div>
-            <div class="card-flap flap1">
-              <div class="card-description">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              </div>
-              <div class="card-flap flap2">
-                <div class="card-actions">
-                  <button onclick="document.location='#'" class="btn">Lire la suite</button> 
-                </div>
-              </div>
-            </div>
+  <section class="projet" id="Projet">
+    <div class="grid">
+      <div class="grid__item">
+        <div class="card"><img class="card__img" src="/img/Karl.png" alt="Karl">
+          <div class="card__content">
+            <h1 class="card__header">Karl le carreleur</h1>
+            <p class="card__text">Application web</p>
+            <button class="card__btn" href="#">Lire la suite<span>&rarr;</span></button>
           </div>
         </div>
+      </div>
+      <div class="grid__item">
+        <div class="card"><img class="card__img" src="/img/logo1.jpg" alt="IEVA">
+          <div class="card__content">
+            <h1 class="card__header">IEVA</h1>
+            <p class="card__text">Stage de 2<sup>ème</sup> années</p>
+            <button class="card__btn" onclick="window.location.href='stage.html'" >Lire la suite<span>&rarr;</span></button>
+          </div>
+        </div>
+      </div>
+      <div class="grid__item">
+        <div class="card"><img class="card__img" src="/img/gedi.png" alt="Gedimagination">
+          <div class="card__content">
+            <h1 class="card__header">Gedimagination</h1>
+            <p class="card__text">Application web et mobile</p>
+            <button class="card__btn">Lire la suite<span>&rarr;</span></button>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
   
   <section class="veille" id="Veille">
