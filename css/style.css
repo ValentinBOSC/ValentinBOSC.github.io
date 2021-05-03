@@ -120,19 +120,24 @@ header .intro{
 }
 
 /*section */
+.presentation{
+    padding: 3rem;
+}
 .competence{
     background-color: rgb(247, 247, 247);
+    padding: 3rem;
 }
 
 .veille{
     background-color: rgb(247, 247, 247);
+    padding: 3rem;
 }
 
 .projet{
     display: flex;
     justify-content: center;
     align-content: center;
-    padding: 6rem;
+    padding: 8rem;
 }
 @media (max-width: 60em) {
     body {
