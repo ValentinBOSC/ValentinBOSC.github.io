@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="fr" >
+<head>
+  <meta charset="UTF-8">
+  <title>BOSC Valentin</title>
+  <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+    <nav class="nav">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">BOSC Valentin</a>
+            </div>
+            <div id="mainListDiv" class="main_list">
+                <ul class="navlinks">
+                    <li><a href="index.html#Competences">Compétences</a></li>
+                    <li><a href="index.html#Projet">Projet</a></li>
+                    <li><a href="index.html#Veille">Veille</a></li>
+                    <li><a href="index.html#footer">Information</a></li>
+                </ul>
+            </div>
+            <span class="navTrigger">
+                <i></i>
+                <i></i>
+                <i></i>
+            </span>
+        </div>
+    </nav>
+
+    <header class="stage">
+        <div class="container">
+            <div class="intro">
+                <p>Projet Karl le carreleur</p>
+            </div>
+        </div>
+    </header>
+
+    <section class="prensantation">
+        <h2 class="myH2">Présentation</h2>
+        <p class="myP">
+            La société Karl le carreleur vient tout juste de recevoir du nouveau matériel 
+            informatique il souhaite donc faire passer la gestion de tout leurs matériels et de 
+            leurs clients sur un site internet.
+        </p>
+              
+        <h2 class="myH2">Description de la solution</h2>
+        <p class="myP">
+            Afin de comprendre et répondre au besoin du client, j'ai produit plusieurs réalisations, schémas qui se trouvent ci-dessous. 
+        </p>
+        <div class="imge1">
+            <img src="/img/Diagramme classe KARL.png.png" alt="Diagramme"width="400">
+            <img src="/img/schemasoluKarl.png" alt="schema" width="500">
+        </div>
+        <div class="imge2">
+            <img src="/img/MCDKARL.png" alt="MCDKARL"width="700">
+        </div>
+        
+        <img class="myImg" src="/img/tableKarl.png" alt="Tableau"width="700">
+
+        <h2 class="myH2">Réalisation du projet</h2>
+        <p class="myP">
+            Pour ce projet, J'ai fait pour chaque page un système pour voir la base de données et un autre pour pouvoir rajouter à élément en base ce qui donne pour arborescence.
+        </p>
+        <img src="/img/arbo.png" alt="arborescence"width="600" class="myImg">
+        <p class="myP">
+            Ci-dessous se trouvent des images de la page d'accueil ainsi que de la page entrepôt et de la page pour ajouter un entrepôt. 
+        </p>
+        <img src="/img/indexkarl.png" alt="indexkarl"width="600" class="myImg">
+        <img src="/img/chantier.png" alt="chantier"width="300" class="myImg">
+        <img src="/img/chantieradd.png" alt="chantieradd"width="300" class="myImg">
+        <h2 class="myH2">Bilan</h2>
+        <p class="myP">
+            Personnellement ce projet m’a permis d'avoir de nouvelles connaissances en web et en particulier en php.
+            <br><br>
+            Malheureusement je n'ai pu finir toutes les pages et le système de connexion.
+        </p>
+    </section>
+
+    
+
+    
+<!-- Jquery needed -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <!--<script src="js/scripts.js"></script>-->
+
+<!-- Function used to shrink nav bar removing paddings and adding black background -->
+    <script>
+        $(window).scroll(function() {
+            if ($(document).scrollTop() > 50) {
+                $('.nav').addClass('affix');
+                console.log("OK");
+            } else {
+                $('.nav').removeClass('affix');
+            }
+        });
+    </script>
+
+<!-- partial -->
+  <script  src="js/script.js"></script>
+
+</body>
+</html>
