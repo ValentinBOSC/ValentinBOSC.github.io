@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="fr" >
+<head>
+  <meta charset="UTF-8">
+  <title>BOSC Valentin</title>
+  <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+    <nav class="nav">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">BOSC Valentin</a>
+            </div>
+            <div id="mainListDiv" class="main_list">
+                <ul class="navlinks">
+                    <li><a href="index.html#Competences">Compétences</a></li>
+                    <li><a href="index.html#Projet">Projet</a></li>
+                    <li><a href="index.html#Veille">Veille</a></li>
+                    <li><a href="index.html#Information">Information</a></li>
+                </ul>
+            </div>
+            <span class="navTrigger">
+                <i></i>
+                <i></i>
+                <i></i>
+            </span>
+        </div>
+    </nav>
+
+    <header class="stage">
+        <div class="container">
+            <div class="intro">
+                <p>Projet Gedima'gination</p>
+            </div>
+        </div>
+    </header>
+
+    <section class="prensantation">
+        <h2 class="myH2">Présentation</h2>
+        <p class="myP">
+            Pour fêter l'entrée de NEGOMAT dans le réseau de GEDIMAT, ils organisent un jeu concours, "Gedima'gination".
+            Voici les fonctionnalités, les conditions et les règles du concours :
+        </p>
+        <ul class="myUl">
+            <li>-Pour s'inscrire, il faut poster une photo d'une réalisation faite avec des matériaux de NEGOMAT.</li>
+            <li>-Les participants devront être client chez NEGOMAT (professionnel ou particulier).</li>
+            <li>-Les clients du magasins voteront pour leurs 3 réalisations préférées.</li>
+            <li>-Les votes se font depuis une tablette en magasin.</li>
+            <li>-Les votants devront avoir fait un achat le jour même dans le magasin.</li>
+            <li>-Les votants attribueront une note comprise entre 0 et 5 G'aimes.</li>
+            <li>-Les gagants seront ceux dont la photo aura le plus de G'aimes.</li>
+            <li>-Les gagants seront annoncés sur le site internet.</li>
+            <li>-Les gagants auront des bons d'achats.</li>
+        </ul>
+              
+        <h2 class="myH2">Description de la solution</h2>
+        <p class="myP">
+            Afin de comprendre et répondre au besoin du client, j'ai produit plusieurs réalisations, schémas qui se trouvent ci-dessous. 
+        </p>
+        <div class="imge1">
+            <img src="/img/Diagramme classe.png" alt="Diagramme"width="300">
+            <img src="/img/schemasolu.png" alt="schema" width="300">
+        </div>
+        <div class="imge2">
+            <img src="/img/MCD_Gedimat_MySQL.JPG" alt="MCD_Gedimat_MySQL"width="300">
+            <img src="/img/MCD_Gedimat_SQLLite.JPG" alt="MCD_Gedimat_SQLLite" width="300">
+        </div>
+        
+        <img class="myImg" src="/img/table.png" alt="Tableau"width="500">
+
+        <h2 class="myH2">Réalisation du projet</h2>
+        <p class="myP">
+            Pour ce projet, une approche agile avec un système de sprint à été utilisé. Un sprint se compose d'une ou de plusieurs user story qui califie le besoin, définit les critères.
+            Voici les différentes user story du projet. 
+        </p>
+        <img src="/img/userstory.PNG" alt="userstory"width="500" class="myImg">
+
+        <h2 class="myH3">Production</h2>
+        <p class="myP">
+            Dans ce projet j'ai réalisé les user story avec une priorité haute, donc : 
+        </p>
+        <ul class="myUl">
+            <li>- sur l'application web :
+                <ul class="myUl1">
+                    <li>un participant peut poster sa réalisation</li>
+                    <li>le gestionnaire peut publier le classement du concours</li>
+                    <li>les visiteurs peuvent voir le classement</li>
+                    <li>un utilisateur peut se connecter en s'inscrivant (connexion non terminée)</li>
+                </ul>
+            </li>
+            <li>- sur l'application mobile :
+                <ul class="myUl1">
+                    <li>le gestionnaire peut importer les données des réalisations</li>
+                    <li>le votant peut voter pour des réalisations</li>
+                    <li>le gestionnaire peut exporter les données des votes</li>
+                </ul>
+            </li>
+        </ul>
+        <p class="myP">
+            Ci-dessous se trouve des images de la page d'accueil de l'application web et la page vote de l'application mobile. 
+        </p>
+        <img src="/img/Captureacgedi.JPG" alt="Captureacgedi"width="500" class="myImg">
+        <img src="/img/pageVote.JPG" alt="pageVote"width="500" class="myImg">
+        <h2 class="myH2">Bilan</h2>
+        <p class="myP">
+            Personnellement ce projet m’a permis d'avoir de nouvelles connaissances dans les différents langages et de travailler en équipe.
+            <br><br>
+            Malheureusement je n'ai pu finir de les user story dû à un manque de temps.
+        </p>
+    </section>
+
+    
+
+    
+<!-- Jquery needed -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <!--<script src="js/scripts.js"></script>-->
+
+<!-- Function used to shrink nav bar removing paddings and adding black background -->
+    <script>
+        $(window).scroll(function() {
+            if ($(document).scrollTop() > 50) {
+                $('.nav').addClass('affix');
+                console.log("OK");
+            } else {
+                $('.nav').removeClass('affix');
+            }
+        });
+    </script>
+
+<!-- partial -->
+  <script  src="js/script.js"></script>
+
+</body>
+</html>
